@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="./app.js"></script>
+  <link rel="stylesheet" href="styles.css">
+  <!-- <script src="allProduct.js"></script>
+  <script src="Product.js"></script> -->
+  <title>Document</title>
+</head>
+<body>
+  <div id="Title">
+     <label>laptop store</label>
+    <a href="./admin.html">you're an admin have fun</a>
+  </div>
+  <div id="filter_Options">
+    <div class="dropdown" id="Prices">Prices
+      <div class="dropdown-content">
+        <div onclick="app.module.FilterWithPrice(0,1000)">0-1000</div>
+        <div onclick="app.module.FilterWithPrice(1001,5000)">1001-5000</div>
+        <div onclick="app.module.FilterWithPrice(5001,12000)">5001-12000</div>
+      </div>
+    </div>
+    <div class="dropdown" id="Screen_Sizes">Screen Sizes
+      <div class="dropdown-content">
+        <div onclick="app.module.filterWithScreenSizes(14)">14</div>
+        <div onclick="app.module.filterWithScreenSizes(14.2)">14.2</div>
+        <div onclick="app.module.filterWithScreenSizes(15.6)">15.6</div>
+      </div>
+    </div>
+    <div class="dropdown" id="Manufacturer"> Manufacturer
+      <div class="dropdown-content">
+        <div onclick="app.module.filterWithManufacturer('Apple')">Apple</div>
+        <div onclick="app.module.filterWithManufacturer('Lenovo')">Lenovo</div>
+        <div onclick="app.module.filterWithManufacturer('HP')">HP</div>
+      </div>
+    </div>
+    <div class="dropdown" id="ExpensiveToCheap">Sort by:
+      <div class="dropdown-content">
+        <div onclick="app.module.MostExpensive()">expensive to cheapest</div>
+        <div onclick="app.module.fromCheapest()">cheapest to expensive</div>
+      </div>
+    </div>
+    <button id="clear" onclick="app.module.clear()">reset the list</button>
+  </div>
+  <div id="Product_List">
+    
+  </div>
+  <div class="footer">
+    <a href="">Contact us</a>
+    <a href="">Laptop Store</a>
+  </div>
+</body>
+</html>
